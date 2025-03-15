@@ -42,7 +42,7 @@ public class OracleDAOFactory extends DAOFactory {
                         "CLAN#95123");*/
                 conexion = DriverManager.getConnection(
                         //"jdbc:oracle:thin:@192.168.1.6:1521:BDELCLAN",
-                        "jdbc:sqlserver://localhost:1433;databaseName=bdprueba",  //jdbc:oracle:thin:: Especifica que se utiliza el driver Thin de Oracle.     -     //@SERVIDOR05:1521:BDELCLAN: Indica el servidor, puerto y nombre de la base de datos.
+                        "jdbc:sqlserver://localhost:1433;databaseName=bdprueba;encrypt=false",  //jdbc:oracle:thin:: Especifica que se utiliza el driver Thin de Oracle.     -     //@SERVIDOR05:1521:BDELCLAN: Indica el servidor, puerto y nombre de la base de datos.
                         "usersql",  //"ELCLAN", "ELCL4n#159": Son el usuario y la contraseña de la base de datos.
                         "root2"); //
             } catch (Exception e) {

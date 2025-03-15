@@ -391,12 +391,13 @@
                                             } else if (clave.trim() === '' || clave.indexOf(' ') !== -1) {  //verifica si hay espacio vacio ''  si hay retorna ese indice y lo iguala a -1 , es es diferente de -1 entonces no hay ninguna cadena vacia 
                                                 mensajeAlertas('POR FAVOR, COMPLETE TODOS LOS CAMPOS, NO DEBEN CONTENER ESPACIOS', '', 3);
                                             } else {
-                                               // Login();
+                                                Login();
                                                console.log("paso todas validaciones se va a ir a la funcion de login");
                                             }
                                         }
 
                                         function Login() {
+                                            alert("llego a login");
                                             const user = $("#user").val();
                                             const clave = $("#clave").val();
                                             $.ajax({

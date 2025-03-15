@@ -16,6 +16,7 @@ private String codMensaje;
 private String mensaje;
 private String codigoUsuario;
 private String codigoPerfil;
+private String NombreUsuario;
 private ArrayList<reHumanos> listaUsuarios;
 
     public String getCodigoUsuario() {
@@ -64,5 +65,15 @@ private ArrayList<reHumanos> listaUsuarios;
       public void setListaUsuarios(ArrayList<reHumanos> listaUsuarios) {
         this.listaUsuarios = listaUsuarios;
     }
+
+    public String getNombreUsuario() {
+        return NombreUsuario;
+    }
+
+    public void setNombreUsuario(String NombreUsuario) {
+        this.NombreUsuario = NombreUsuario;
+    }
     
+      
+      
 }
