@@ -18,6 +18,8 @@ private String codigoUsuario;
 private String codigoPerfil;
 private String NombreUsuario;
 private ArrayList<reHumanos> listaUsuarios;
+private ArrayList<reHumanos> listaGeneral;
+
 
     public String getCodigoUsuario() {
         return codigoUsuario;
@@ -74,6 +76,14 @@ private ArrayList<reHumanos> listaUsuarios;
         this.NombreUsuario = NombreUsuario;
     }
     
+    public ArrayList<reHumanos> getListaGeneral() {
+        return listaGeneral;
+    }
+    
+    public void setListaGeneral(ArrayList<reHumanos> listaGeneral) {
+        this.listaGeneral = listaGeneral;
+    }
+
       
       
 }

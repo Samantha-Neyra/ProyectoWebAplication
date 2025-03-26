@@ -6,19 +6,15 @@ package pe.sis.proyectWeb.OracleDAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 import javax.sql.DataSource;
-import javax.swing.JOptionPane;
-import pe.sis.proyectWeb.DAO.DAOFactory;
 import pe.sis.proyectWeb.DAO.reHumanosDAO;
 
 /**
  *
- * @author User
+ * @author USER
  */
-public class OracleDAOFactory extends DAOFactory {
-
-   static DataSource dataSource = null;
+public class SqlDAOFactory {
+    static DataSource dataSource = null;
 
     static {
         try {
@@ -44,10 +40,9 @@ public class OracleDAOFactory extends DAOFactory {
                         "root2"); 
                 */
                  conexion = DriverManager.getConnection(
-                        //"jdbc:oracle:thin:@192.168.1.6:1521:BDELCLAN",
-                        "jdbc:sqlserver://192.168.1.8:1433;databaseName=bdProyectoWeb;encrypt=false", 
-                        "sqlUser",  
-                        "root33"); 
+                "jdbc:sqlserver://localhost:1433;databaseName=bdProyectoWeb;encrypt=false",  
+                        "sqlUser",  //"ELCLAN", "ELCL4n#159": Son el usuario y la contraseña de la base de datos.
+                        "root33"); //
             } catch (Exception e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -61,8 +56,7 @@ public class OracleDAOFactory extends DAOFactory {
         return conexion;
     }
 
-    @Override
     public reHumanosDAO getReHumanosDAO() {
-        return new reHumanosOracleDAO();
+        return new reHumanosSqlDAO();
     }
 }
