@@ -4,7 +4,8 @@
  */
 package pe.sis.proyectWeb.DAO;
 
-import pe.sis.proyectWeb.OracleDAO.OracleDAOFactory;
+//import pe.sis.proyectWeb.OracleDAO.OracleDAOFactory;
+import pe.sis.proyectWeb.OracleDAO.SqlDAOFactory;
 
 /**
  *
@@ -17,10 +18,10 @@ public  abstract class DAOFactory {
         public static final int SQLSERVER = 4;
         public static final int XML = 5;
 
-        public static OracleDAOFactory getDAOFactory(int whichFactory) {
+        public static SqlDAOFactory getDAOFactory(int whichFactory) {
             switch (whichFactory) {
                 case SQLSERVER:
-                    return new OracleDAOFactory();
+                    return new SqlDAOFactory();
                 /*case SQLSERVER:
                         return new SqlServerDAOFactory();
                    case ORACLE:

@@ -349,7 +349,7 @@
             </div>
         </form>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-       <script src="js/auxiliar.js"></script>
+       <script src="js/cargando.js"></script>
     </body>
     
     <script>
@@ -408,14 +408,19 @@
                                                 }, success: function (resultado) {
                                                     const res = $.trim(resultado);
                                                     const rtp = res.split("_");
+                                                    console.log("separacion split" + rtp);
+                                                     console.log(rtp);
                                                     const ini = rtp[0];
                                                     if (ini == 1) {
-                                                        window.location.href = "layout/elclan.jsp?pagina=INICIO";
+                                                        alert("se redirige a pagina de inicio de sesion");
+                                                        window.location.href = "layout/empresa.jsp?pagina=INICIO";   //explicame esta parte del codigo 
+                                 
+                                                       // msjFinal(rtp[0], rtp[1]);
                                                     } else {
-                                                        msjFinal(rtp[0], rtp[1]);
+                   
+                                                         msjFinal(rtp[0], rtp[1]);
                                                     }
                                                 }, complete: function () {
-
                                                 }
                                             });
                                         }

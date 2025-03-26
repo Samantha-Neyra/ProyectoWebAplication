@@ -3,10 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/USER/Documents/NetBeansProjects/aplicacionWebJava/ProyectoWebAplication/src/java/pe/sis/proyectWeb/OracleDAO/reHumanosOracleDAO.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/aplicacionWebJava/ProyectoWebAplication/web/vistas/layout/empresa.jsp</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/aplicacionWebJava/ProyectoWebAplication/src/java/pe/sis/proyectoWeb/Services/reHumanosServices.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/aplicacionWebJava/ProyectoWebAplication/src/java/pe/sis/proyectoWeb/Servlet/reHumanosServlet.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/aplicacionWebJava/ProyectoWebAplication/src/java/pe/sis/proyectWeb/DAO/reHumanosDAO.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/aplicacionWebJava/ProyectoWebAplication/src/java/pe/sis/proyectoWeb/Clases/reHumanos.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/aplicacionWebJava/ProyectoWebAplication/web/vistas/js/cargando.js</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/aplicacionWebJava/ProyectoWebAplication/web/vistas/index.jsp</file>
-            <file>file:/C:/Users/USER/Documents/NetBeansProjects/aplicacionWebJava/ProyectoWebAplication/src/java/pe/sis/proyectWeb/OracleDAO/OracleDAOFactory.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/aplicacionWebJava/ProyectoWebAplication/web/vistas/layout/reHumanos/perfil.jsp</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/aplicacionWebJava/ProyectoWebAplication/src/java/pe/sis/proyectWeb/OracleDAO/reHumanosSqlDAO.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/aplicacionWebJava/ProyectoWebAplication/web/vistas/layout/includes/menu-superior.jsp</file>
         </group>
     </open-files>
 </project-private>

@@ -6,19 +6,15 @@ package pe.sis.proyectWeb.OracleDAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 import javax.sql.DataSource;
-import javax.swing.JOptionPane;
-import pe.sis.proyectWeb.DAO.DAOFactory;
 import pe.sis.proyectWeb.DAO.reHumanosDAO;
 
 /**
  *
- * @author User
+ * @author USER
  */
-public class OracleDAOFactory extends DAOFactory {
-
-   static DataSource dataSource = null;
+public class SqlDAOFactory {
+    static DataSource dataSource = null;
 
     static {
         try {
@@ -35,16 +31,17 @@ public class OracleDAOFactory extends DAOFactory {
 //AYUDA GIT
         if (base.equals("proyectWeb")) {
             try {
-                System.out.println("LLEGA A CONEXION ORACLE");
-                /*conexion = DriverManager.getConnection(
-                        "jdbc:oracle:thin:@192.168.1.2:1521:BDELCLAN",
-                        "ELCLAN",
-                        "CLAN#95123");*/
+                System.out.println("LLEGA A CONEXION SQL SERVER");
+                /*
                 conexion = DriverManager.getConnection(
-                        //"jdbc:oracle:thin:@192.168.1.6:1521:BDELCLAN",
-                        "jdbc:sqlserver://localhost:1433;databaseName=bdprueba;encrypt=false",  //jdbc:oracle:thin:: Especifica que se utiliza el driver Thin de Oracle.     -     //@SERVIDOR05:1521:BDELCLAN: Indica el servidor, puerto y nombre de la base de datos.
-                        "usersql",  //"ELCLAN", "ELCL4n#159": Son el usuario y la contraseña de la base de datos.
-                        "root2"); //
+                        "jdbc:sqlserver://localhost:1433;databaseName=bdprueba;encrypt=false",  
+                        "usersql",  
+                        "root2"); 
+                */
+                 conexion = DriverManager.getConnection(
+                "jdbc:sqlserver://localhost:1433;databaseName=bdProyectoWeb;encrypt=false",  
+                        "sqlUser",  //"ELCLAN", "ELCL4n#159": Son el usuario y la contraseña de la base de datos.
+                        "root33"); //
             } catch (Exception e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -58,8 +55,7 @@ public class OracleDAOFactory extends DAOFactory {
         return conexion;
     }
 
-    @Override
     public reHumanosDAO getReHumanosDAO() {
-        return new reHumanosOracleDAO();
+        return new reHumanosSqlDAO();
     }
 }

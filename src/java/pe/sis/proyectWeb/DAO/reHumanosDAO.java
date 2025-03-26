@@ -10,6 +10,9 @@ import pe.sis.proyectoWeb.Clases.reHumanos;
  *
  * @author User
  */
-public interface  reHumanosDAO {
-     public reHumanos Login(String usuario, String contrasena) throws Exception;
+public interface reHumanosDAO {
+
+    public reHumanos Login(String usuario, String contrasena) throws Exception;
+
+    public reHumanos listaDatosUsuario(String codUsuario, String codEstado) throws Exception;
 }
